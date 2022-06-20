@@ -3,7 +3,7 @@
     "username": "root",
     "password": "@aA0779923503",
     "database": "template",
-    "host": "localhost",
+    "host": "https://expressmysqlapitemplate.herokuapp.com/",
     "dialect": "mysql"
   },
   "test": {
