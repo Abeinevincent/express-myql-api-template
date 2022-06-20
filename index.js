@@ -19,6 +19,6 @@ app.use("/api/auth", authRoute);
 database.sequelize.sync().then(() => {
   console.log("Db connection successful");
   app.listen(process.env.PORT || 8000, () => {
-    console.log(`Backend server is listening at port ${PORT}`);
+    console.log(`Backend server is listening at port 8000`);
   });
 });
