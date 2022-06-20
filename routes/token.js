@@ -27,7 +27,7 @@ const verifyToken = (req, res, next) => {
 // Allow admin and owner of the account to perform some operations
 const verifyTokenAndAuthorization = (req, res, next) => {
   verifyToken(req, res, () => {
-    if (req.user.id === req.params.id) {
+    if (req.user.id === req.params.id || req.user.isAdmin) {
       next();
     } else {
       return res.status(403).json("You are not allowed to do that");
