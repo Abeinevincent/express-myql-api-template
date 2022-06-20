@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "https://expressmysqlapitemplate.herokuapp.com",
+    "username": "b8f4d2df944d36",
+    "password": "07ca006f",
+    "database": "heroku_532dd18a73f0dab",
+    "host": "us-cdbr-east-05.cleardb.net",
     "dialect": "mysql"
   }
 }
