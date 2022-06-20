@@ -18,8 +18,7 @@ app.use("/api/auth", authRoute);
 // Configure sequelize to sync all models and create corresponding tables accordingly
 database.sequelize.sync().then(() => {
   console.log("Db connection successful");
-  const PORT = process.env.PORT || 8000;
-  app.listen(PORT, () => {
+  app.listen(process.env.PORT || 8000, () => {
     console.log(`Backend server is listening at port ${PORT}`);
   });
 });
